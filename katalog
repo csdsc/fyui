@@ -4,7 +4,7 @@
 #define ROZMIAR 100
 
 struct obrazy {
-  char nazwa [30];
+  char nazwa [20];
   int wysokosc;
   int szerokosc;
   char typ [4];
@@ -74,7 +74,8 @@ int main (){
     printf("%i. %s /n",i+1, obraz[i].nazwa);
     }
   }
- 
+ }
+ }
  //SZCZEGÓŁY OBRAZU
  void szczegoly (){
 int numer;
@@ -84,12 +85,11 @@ numer=numer-1
 
 printf ("Nazwa: %s \n Wysokość: %i \n Szerokość: %i \n Typ: %s \n Średnia znormalizowana itensywność: %d \n Kolor dominujący: %s \n Histogram znormalizowany: %s" /*jak cala tablice wstawic??(kolor i wektor*/, obraz[numer].nazwa, obraz[numer].wysokosc, obraz[numer].szerokosc, obraz[numer].typ, obraz[numer].intensywnosc, obraz[numer].kolor[], obraz[numer].wektor[])
 
- 
+} 
   
  //DODAWANIE
- void dodawanie () 
+ void dodawanie () {
 int lb_obrazow=0;
-void dodawanie (){
 int i=0;
 char nazwa[30];
 char typ [4];
@@ -149,11 +149,11 @@ while (j<=lb_obrazow){
    obrazy[j-1]=obrazy[j];//???
 ++j}
 lb_obrazow-1;}
-
+}
 
 //WPROWADZANIE ZMIAN
 
-void zmiana()
+void zmiana(){
 int numer;
 int cecha;
 char nowa_nazwa[20];
@@ -191,7 +191,8 @@ scanf ("%i", cecha)
        break;
        //case 6 i 7
        //jak wprowadzic tablice?????   
-       
+       }
+  }
 //SORTOWANIE
 void sortowanie (){
 int liczba;
@@ -223,9 +224,9 @@ void sortowanie_nazwy() {
 
     } while (flaga != 0);
 
-}
 
-
+}}}
+return 0;}
 
 
        
